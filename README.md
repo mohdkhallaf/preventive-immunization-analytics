@@ -20,7 +20,7 @@ Preventive immunization programs rely on timely vaccine administration and equit
 
 ## 🏗️ Architecture & Star Schema
 
-+-------------------------+
+    +-------------------------+
     |       Dim_Clinics       |
     +-------------------------+
     | *clinic_region (PK)     |
