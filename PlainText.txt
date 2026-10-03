@@ -1,0 +1,18 @@
+preventive-immunization-analytics/
+│
+├── data/
+│   ├── Dim_Clinics.csv
+│   └── Fact_Vaccinations.csv
+│
+├── sql/
+│   ├── 01_schema_definition.sql
+│   └── 02_analytical_kpis.sql
+│
+├── powerbi/
+│   └── immunization_surveillance_dashboard.pbix
+│
+├── screenshots/
+│   ├── dashboard_overview.png
+│   └── arcgis_spatial_analysis.png
+│
+└── README.md
