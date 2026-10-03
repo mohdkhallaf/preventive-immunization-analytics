@@ -19,3 +19,61 @@ Preventive immunization programs rely on timely vaccine administration and equit
 ---
 
 ## 🏗️ Architecture & Star Schema
+
++-------------------------+
+    |       Dim_Clinics       |
+    +-------------------------+
+    | *clinic_region (PK)     |
+    |  city                   |
+    |  latitude               |
+    |  longitude              |
+    +------------+------------+
+                 | 1
+                 |
+                 | *
+    +------------+------------+
+    |    Fact_Vaccinations    |
+    +-------------------------+
+    | *record_id (PK)         |
+    |  patient_id             |
+    |  patient_age_group      |
+    |  gender                 |
+    |  clinic_region (FK)     |
+    |  vaccine_type           |
+    |  dose_sequence          |
+    |  scheduled_date         |
+    |  administered_date      |
+    |  status                 |
+    |  adverse_reaction       |
+    +-------------------------+
+
+---
+
+## 📊 Core Surveillance KPIs (DAX)
+- **Coverage Rate %:** Administered doses divided by total scheduled appointments.
+- **On-Time Adherence %:** Vaccinations administered strictly on the scheduled date versus overdue administrations.
+- **Dropout / Missed Rate %:** Proportion of patients missing critical immunization schedules.
+- **AEFI % (Safety Signal):** Percentage of administered doses associated with an adverse reaction report.
+
+---
+
+## 🗺️ Geospatial Integration (ArcGIS for Power BI)
+- **Bubble Size:** Total administered doses (throughput).
+- **Color Ramp:** Coverage rate % by regional clinic to identify underserviced areas.
+- **Interactive Tooltips:** Instant visibility into scheduling bottlenecks per municipal hub.
+
+---
+
+## 🛠️ Tech Stack
+- **Business Intelligence & Mapping:** Microsoft Power BI, ArcGIS Maps, DAX
+- **Database & Querying:** PostgreSQL (Aggregations, Filtered Metrics, Constraints)
+- **Source Code Management:** Git, GitHub
+
+---
+
+## 👤 Author
+**Mohamed M. Khallaf**  
+- [LinkedIn Profile](https://www.linkedin.com/in/meedakh)
+- [GitHub Profile](https://www.github.com/mohdkhallaf)
+- [Upwork Freelancer Profile](https://www.upwork.com/freelancers/~014b76f212ed42a70b?mp_source=share)
+- **Email:** mohdkhallaf1986@gmail.com
