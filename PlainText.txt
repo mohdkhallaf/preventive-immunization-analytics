@@ -12,7 +12,6 @@ preventive-immunization-analytics/
 │   └── immunization_surveillance_dashboard.pbix
 │
 ├── screenshots/
-│   ├── dashboard_overview.png
-│   └── arcgis_spatial_analysis.png
+│   └── dashboard_overview.jpg
 │
 └── README.md
